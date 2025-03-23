@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome and icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="div hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                   <i class="fa-solide fa-a"></i>
+                   <div class="logo-text">Kronos</div> 
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#a_propos">A propos</a></li>
+                        <li><a href="#realisations">Réalisations</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#parcours">Parcours</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-img">
+                    <img src="img/profil.png" alt="profil picture">
+                </div>
+                <div class="hero-text">
+                    <h5>Hello,je suis un <span class="typed">Developer</span></h5>
+                    <h1>Bertilo RAODISY</h1>
+                    <p>Je suis un apprenti développeur web fullstack, passionné par la création d'applications web innovantes. Je maîtrise les technologies front-end et back-end et je suis à la recherche de nouveaux défis professionnels.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Télécharger mon CV</a>
+                        <a href="#" class="btn">Contactes</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var togglebtn=document.querySelector('.togglebtn');
+        var nav=document.querySelector('.navlinks');
+        var links=document.querySelectorAll('.navlinks li');
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed('.typed',{
+            strings:['Frontend Developer','UX/UI Designer','Gamer'],
+            typeSpeed:200,
+            backSpeed:60,
+            loop:true
+        })
+    </script>
+</body>
+</html>
